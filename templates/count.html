@@ -1,0 +1,14 @@
+<a href= "{% url 'about' %}">About</a>
+
+<h1>There are {{num}} words in the text</h1>
+
+
+<h1>The original text:</h1>
+{{fulltext}}
+
+<h1>Word count:</h1>
+{% for word,num1 in hWords%}
+{{word}} :{{num1}}
+<br \>
+
+{%endfor%}
